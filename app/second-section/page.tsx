@@ -51,10 +51,10 @@ const features = [
 
 const SecondSection = () => {
   return (
-    <section className="container mx-auto">
-      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
-        <div className="justify-center p-5 md:w-1/2">
-          <div className="bg-gradient-to-r from-blue-800 to-green-300 bg-clip-text text-transparent text-4xl md:text-6xl font-bold pb-10">
+    <section className="flex flex-col p-10">
+      <div className="flex flex-col md:flex-row md:items-center mb-20">
+        <div className="flex flex-col p-5 md:w-1/2">
+          <div className="bg-gradient-to-r from-blue-800 to-green-300 bg-clip-text text-transparent text-4xl md:text-5xl font-bold pb-10">
             From startup to enterprise, Bird is built for every type of
             business.
           </div>
@@ -66,21 +66,18 @@ const SecondSection = () => {
             Get Started
           </button>
         </div>
-        <video
-          className="h-full rounded-xl md:w-2/5  p-4 md:p-0"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/content/video-2.mp4" type="video.mp4" />
-        </video>
+        <div className="w-full md:w-1/2 p-5">
+          <video className="rounded-xl" autoPlay muted loop>
+            <source src="/content/video-2.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <div className="flex flex-col justify-center items-center">
         <div className="text-3xl md:text-5xl flex justify-center font-bold pt-5 pb-10 bg-gradient-to-r from-purple-400 to-blue-800 bg-clip-text text-transparent">
           Product Features
         </div>
-        <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-40">
+        <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-20">
           {features.map((feature, index) => (
             <div
               key={index}
