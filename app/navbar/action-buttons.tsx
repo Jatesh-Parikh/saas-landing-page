@@ -5,7 +5,6 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -25,11 +24,11 @@ const ActionButtons = () => {
               <SheetDescription>
                 <div className="flex flex-col items-start space-y-4 w-full text-lg text-black mt-10">
                   <Link href="/">Sign in</Link>
-                  <Link href="/">Get Started</Link>
-                  <Link href="/">Features</Link>
-                  <Link href="/">Pricing</Link>
-                  <Link href="/">Contact</Link>
-                  <Link href="/">About</Link>
+                  <Link href="#getstarted">Get Started</Link>
+                  <Link href="#features">Features</Link>
+                  <Link href="#pricing">Pricing</Link>
+                  <Link href="#contact">Contact</Link>
+                  <Link href="#about">About</Link>
                 </div>
               </SheetDescription>
             </SheetHeader>

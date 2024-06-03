@@ -51,7 +51,7 @@ const features = [
 
 const SecondSection = () => {
   return (
-    <section className="flex flex-col p-10">
+    <section className="flex flex-col p-10" id="features">
       <div className="flex flex-col md:flex-row md:items-center mb-20">
         <div className="flex flex-col p-5 md:w-1/2">
           <div className="bg-gradient-to-r from-blue-800 to-green-300 bg-clip-text text-transparent text-4xl md:text-5xl font-bold pb-10">

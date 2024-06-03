@@ -3,6 +3,7 @@ const FirstSection = () => {
     <section
       className="md:py-20 py-10 bg-gradient-to-r from-white 
     to-gray-100 space-y-10"
+      id="getstarted"
     >
       <div className="container mx-auto text-center">
         <div className="text-6xl flex justify-center font-bold md:px-20 pb-10 text-gradient bg-gradient-to-r from-blue-500 to-green-300 bg-clip-text text-transparent">
